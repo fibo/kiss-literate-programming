@@ -2,6 +2,8 @@
 
 > is a minimal literate programming boilerplate
 
+[![KLP](https://img.shields.io/badge/kiss-literate-orange.svg)](https://github.com/fibo/kiss-literate-programming)
+
 ## Description
 
 Merge two beautiful concepts: the [KISS principle](https://en.wikipedia.org/wiki/KISS_principle) and the [Literate programming approach](https://en.wikipedia.org/wiki/KISS_principle).
@@ -34,7 +36,6 @@ Now you have a *README.md* you can edit to add documentation and code. See [this
 
 ## Annotated source
 
-
 Start a `klp` function
 
     klp() {
@@ -43,35 +44,82 @@ which expects one parameter, otherwise prints its **usage**
 
         if [ -z "$1" ]
         then
-            cat <<-EOF
-            # KISS Literate programming
-            ##
-            # Installation instructions, source and license available here:
-            # https://github.com/fibo/kiss-literate-programming
-            ##
-            USAGE: klp foo
-            EOF
+            cat <<MESSAGE
+      # KISS Literate programming
+      ##
+      # Installation instructions, source and license available here:
+      # https://github.com/fibo/kiss-literate-programming
+      ##
+      USAGE: klp foo
+    MESSAGE
           return 0
         fi
-        
+
         TARGET=$1
 
 Check if *README.md* and *Makefile* already exist, do not overwrite them.
 
-        echo TODO: check README.md and Makefile do not exist
+        if [ -e Makefile ]
+        then
+            cat <<MESSAGE
+    Makefile already exists
+    MESSAGE
+
+          return 1
+        fi
+
+        if [ -e README.md ]
+        then
+            cat <<MESSAGE
+    README.md already exists
+    MESSAGE
+
+          return 1
+        fi
 
 Generate *README.md*
 
-        echo TODO: generate README.md
+        cat <<README > README.md
+
+using the following template
+
+    # name
+    
+    > description
+    
+    [![KLP](https://img.shields.io/badge/kiss-literate-orange.svg)](https://github.com/fibo/kiss-literate-programming)
+    
+    ## Installation
+    
+    ## Annotated source
+    
+    Documentation here
+    
+        your code here
+    
+    more documentation
+    more documentation
+    
+        more code
+        more code more code
+        more code more code more code
+    
+    ## License
+    
+
+Remember to change *name*, *description* and so on.
+Please keep the *kiss-literate* badge to support the project.
+
+    README
 
 Generate *Makefile*
 
-        cat <<-MAKEFILE
-        .PHONY: klp.sh
-        
-        $TARGET:
-        	grep '    ' README.md | sed -e 's/    //' > $TARGET
-        MAKEFILE
+        cat <<MAKEFILE > Makefile
+    .PHONY: $TARGET
+
+    $TARGET:
+    	grep '    ' README.md | sed -e 's/    //' > $TARGET
+    MAKEFILE
 
 Clean up
 
