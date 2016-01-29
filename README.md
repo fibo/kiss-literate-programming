@@ -42,44 +42,39 @@ Start a `klp` function
 
 which expects one parameter, otherwise prints its **usage**
 
-        if [ -z "$1" ]
-        then
-            cat <<MESSAGE
-      # KISS Literate programming
-      ##
-      # Installation instructions, source and license available here:
-      # https://github.com/fibo/kiss-literate-programming
-      ##
-      USAGE: klp foo
-    MESSAGE
-          return 0
-        fi
+    	if [ -z "$1" ]
+    	then
+    		cat <<-MESSAGE
+    		# KISS Literate programming
+    		##
+    		# Installation instructions, source and license available here:
+    		# https://github.com/fibo/kiss-literate-programming
+    		##
+    		USAGE: klp foo
+    		MESSAGE
 
-        TARGET=$1
+    		return 1
+    	fi
+
+    	TARGET=$1
 
 Check if *README.md* and *Makefile* already exist, do not overwrite them.
 
-        if [ -e Makefile ]
-        then
-            cat <<MESSAGE
-    Makefile already exists
-    MESSAGE
+    	if [ -e Makefile ]
+    	then
+    		echo Makefile already exists
+    		return 1
+    	fi
 
-          return 1
-        fi
-
-        if [ -e README.md ]
-        then
-            cat <<MESSAGE
-    README.md already exists
-    MESSAGE
-
-          return 1
-        fi
+    	if [ -e README.md ]
+    	then
+    		echo README.md already exists
+    		return 1
+    	fi
 
 Generate *README.md*
 
-        cat <<README > README.md
+    	cat <<README > README.md
 
 using the following template
 
@@ -114,7 +109,7 @@ Please keep the *kiss-literate* badge to support the project.
 
 Generate *Makefile*
 
-        cat <<MAKEFILE > Makefile
+    	cat <<MAKEFILE > Makefile
     .PHONY: $TARGET
 
     $TARGET:
@@ -123,7 +118,7 @@ Generate *Makefile*
 
 Clean up
 
-        unset TARGET
+    	unset TARGET
     }
 
 ## Installation
@@ -147,7 +142,7 @@ source ~/.bash/kiss-literate-programming/klp.sh
 ## Requirements
 
 * grep and sed: used for extracting code from *README.md*
-* cat
+* cat: used to generate *Makefile* and *README.md*.
 * bash
 * make
 * git: optionally used for installation
