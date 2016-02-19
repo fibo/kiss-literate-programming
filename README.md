@@ -11,7 +11,7 @@ Merge two beautiful concepts: the [KISS principle](https://en.wikipedia.org/wiki
 The *kiss-literate-programming* (from now on, KLP) is defined by the following rules:
 
 * All source code and documentation are contained in a *README.md* text file, which is written using [Markdown syntax](https://daringfireball.net/projects/markdown/syntax).
-* Source code contained in *README.md* must be indented using 4 spaces.
+* Source code rows embedded in *README.md* start with 4 spaces; code examples can use the backtick syntax and are ignored. See the [readme template](#readme-template) as example.
 * Source code is generated running `make`.
 
 KLP is agnostic about:
@@ -76,15 +76,23 @@ Generate *README.md*
 
     	cat <<README > README.md
 
-using the following template
 
+using the following template
+<a name="readme-template"></a>
+
+    <!-- TODO: edit name and description -->
     # name
     
-    > description
+    > description 
     
     [![KLP](https://img.shields.io/badge/kiss-literate-orange.svg)](http://g14n.info/kiss-literate-programming)
     
     ## Installation
+    
+    <!-- TODO: installation instructions here -->
+    
+    ## Usage
+    
     
     ## Annotated source
     
@@ -94,13 +102,20 @@ using the following template
     
     more documentation
     more documentation
+
+    ```
+    example code
+    ```
     
         more code
         more code more code
         more code more code more code
     
+    more documentation
+    
     ## License
     
+    <!-- TODO: license here -->
 
 Remember to change *name*, *description* and so on.
 Please keep the *kiss-literate* badge to support the project.
