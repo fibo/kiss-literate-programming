@@ -48,7 +48,7 @@ which expects one parameter, otherwise prints its **usage**
     		# KISS Literate programming
     		##
     		# Installation instructions, source and license available here:
-    		# https://github.com/fibo/kiss-literate-programming
+    		# http://g14n.info/kiss-literate-programming
     		##
     		USAGE: klp foo
     		MESSAGE
