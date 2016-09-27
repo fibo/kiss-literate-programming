@@ -5,7 +5,7 @@ klp() {
 		# KISS Literate programming
 		##
 		# Installation instructions, source and license available here:
-		# https://github.com/fibo/kiss-literate-programming
+		# http://g14n.info/kiss-literate-programming
 		##
 		USAGE: klp foo
 		MESSAGE
@@ -23,13 +23,19 @@ klp() {
 		return 1
 	fi
 	cat <<README > README.md
+<!-- TODO: edit name and description -->
 # name
 
-> description
+> description 
 
-[![KLP](https://img.shields.io/badge/kiss-literate-orange.svg)](https://github.com/fibo/kiss-literate-programming)
+[![KLP](https://img.shields.io/badge/kiss-literate-orange.svg)](http://g14n.info/kiss-literate-programming)
 
 ## Installation
+
+<!-- TODO: installation instructions here -->
+
+## Usage
+
 
 ## Annotated source
 
@@ -39,13 +45,19 @@ Documentation here
 
 more documentation
 more documentation
+```
+example code
+```
 
     more code
     more code more code
     more code more code more code
 
+more documentation
+
 ## License
 
+<!-- TODO: license here -->
 README
 	cat <<MAKEFILE > Makefile
 .PHONY: $TARGET
