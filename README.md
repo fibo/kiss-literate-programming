@@ -4,23 +4,11 @@
 
 [![KLP](https://img.shields.io/badge/kiss-literate-orange.svg)](http://g14n.info/kiss-literate-programming)
 
-## See also
-
-This KLP (KISS Literate programming) implementation uses bash: for a more advanced, yet tiny, tool see [markdown2code](http://g14n.info/markdown2code).
-
-## Badge
-
-Add the row below in your markdown file to get a badge
-
-```
-[![KLP](https://img.shields.io/badge/kiss-literate-orange.svg)](http://g14n.info/kiss-literate-programming)
-```
-
 ## Description
 
 Merge two beautiful concepts: the [KISS principle](https://en.wikipedia.org/wiki/KISS_principle) and the [Literate programming approach](https://en.wikipedia.org/wiki/KISS_principle).
 
-The *kiss-literate-programming* (from now on, KLP) is defined by the following rules:
+The *KISS-Literate-Programming* (from now on, KLP) is defined by the following rules:
 
 * All source code and documentation are contained in a *README.md* text file, which is written using [Markdown syntax](https://daringfireball.net/projects/markdown/syntax).
 * Source code rows embedded in *README.md* start with 4 spaces; code examples can use the backtick syntax and are ignored. See the [readme template](#readme-template) as example.
@@ -32,6 +20,18 @@ KLP is agnostic about:
 * Installation instructions.
 
 Most of all: KLP does not need an implementation like the one provided here, you can just edit *Makefile* and *README.md* by hand! Of course you can also use `klp` command, see [installation instructions](#installation)
+
+## See also
+
+This KLP implementation uses bash: for a more advanced, yet tiny, tool see [markdown2code](http://g14n.info/markdown2code).
+
+## Badge
+
+Add the row below in your markdown file to get a badge
+
+```
+[![KLP](https://img.shields.io/badge/kiss-literate-orange.svg)](http://g14n.info/kiss-literate-programming)
+```
 
 ## Usage
 
