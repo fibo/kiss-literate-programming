@@ -1,8 +1,20 @@
-# kiss-literate-programming
+# KISS-Literate-Programming
 
 > is a minimal literate programming boilerplate
 
 [![KLP](https://img.shields.io/badge/kiss-literate-orange.svg)](http://g14n.info/kiss-literate-programming)
+
+## See also
+
+This KLP (KISS Literate programming) implementation uses bash: for a more advanced, yet tiny, tool see [markdown2code](http://g14n.info/markdown2code).
+
+## Badge
+
+Add the row below in your markdown file to get a badge
+
+```
+[![KLP](https://img.shields.io/badge/kiss-literate-orange.svg)](http://g14n.info/kiss-literate-programming)
+```
 
 ## Description
 
