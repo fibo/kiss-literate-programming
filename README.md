@@ -21,9 +21,12 @@ KLP is agnostic about:
 
 Most of all: KLP does not need an implementation like the one provided here, you can just edit *Makefile* and *README.md* by hand! Of course you can also use `klp` command, see [installation instructions](#installation)
 
-## See also
+## ADDENDUM
 
-This KLP implementation uses bash: for a more advanced, yet tiny, tool see [markdown2code](http://g14n.info/markdown2code).
+This KLP implementation uses bash and rely on GNU make which is available on every OS.
+
+For a more advanced, yet tiny, tool please check out [markdown2code](http://g14n.info/markdown2code).
+It is recommended if you have Node.js installed, in particular you can use triple backticks and highlight your code.
 
 ## Badge
 
@@ -173,6 +176,21 @@ source ~/.bash/kiss-literate-programming/klp.sh
 * bash
 * make
 * git: optionally used for installation
+
+
+## Examples
+
+Follows a list of examples embracing KLP method:
+
+* [5m](http://g14n.info/5m/)
+* [aws-lambda-res](http://g14n.info/aws-lambda-res/)
+* [mdconf-from](http://g14n.info/mdconf-from/)
+* [not-defined](http://g14n.info/not-defined/)
+* [numerology](http://g14n.info/numerology/)
+* [prime-number](http://g14n.info/prime-number/)
+* [static-props](http://g14n.info/static-props/)
+* [volatility](http://g14n.info/volatility/)
+* [y-combinator](http://g14n.info/y-combinator/)
 
 ## License
 
