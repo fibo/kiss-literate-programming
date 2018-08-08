@@ -191,6 +191,7 @@ Follows a list of examples embracing KLP method:
 * [static-props](http://g14n.info/static-props/)
 * [volatility](http://g14n.info/volatility/)
 * [y-combinator](http://g14n.info/y-combinator/)
+* [fibo's home initializer script](https://github.com/fibo/home/blob/gh-pages/README.md#init-home)
 
 ## License
 
