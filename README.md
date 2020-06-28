@@ -185,7 +185,6 @@ Follows a list of examples embracing KLP method:
 * [5m](http://g14n.info/5m/)
 * [aws-lambda-res](http://g14n.info/aws-lambda-res/)
 * [mdconf-from](http://g14n.info/mdconf-from/)
-* [not-defined](http://g14n.info/not-defined/)
 * [numerology](http://g14n.info/numerology/)
 * [prime-number](http://g14n.info/prime-number/)
 * [static-props](http://g14n.info/static-props/)
