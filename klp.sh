@@ -5,7 +5,7 @@ klp() {
 		# KISS Literate programming
 		##
 		# Installation instructions, source and license available here:
-		# http://g14n.info/kiss-literate-programming
+		# http://fibo.github.io/kiss-literate-programming
 		##
 		USAGE: klp foo
 		MESSAGE
@@ -26,9 +26,9 @@ klp() {
 <!-- TODO: edit name and description -->
 # name
 
-> description 
+> description
 
-[![KLP](https://img.shields.io/badge/kiss-literate-orange.svg)](http://g14n.info/kiss-literate-programming)
+[![KLP](https://fibo.github.io/svg/klp-badge.svg)](http://fibo.github.io/kiss-literate-programming)
 
 ## Installation
 

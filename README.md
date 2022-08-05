@@ -2,11 +2,11 @@
 
 > is a minimal literate programming boilerplate
 
-[![KLP](https://img.shields.io/badge/kiss-literate-orange.svg)](http://g14n.info/kiss-literate-programming)
+[![KLP](https://fibo.github.io/svg/klp-badge.svg)](https://fibo.github.io/kiss-literate-programming)
 
 ## Description
 
-Merge two beautiful concepts: the [KISS principle](https://en.wikipedia.org/wiki/KISS_principle) and the [Literate programming approach](https://en.wikipedia.org/wiki/KISS_principle).
+Merge two beautiful concepts: the [KISS principle](https://en.wikipedia.org/wiki/KISS_principle) and the [Literate programming approach](https://en.wikipedia.org/wiki/Literate_programming).
 
 The *KISS-Literate-Programming* (from now on, KLP) is defined by the following rules:
 
@@ -25,7 +25,7 @@ Most of all: KLP does not need an implementation like the one provided here, you
 
 This KLP implementation uses bash and rely on GNU make which is available on every OS.
 
-For a more advanced, yet tiny, tool please check out [markdown2code](http://g14n.info/markdown2code).
+For a more advanced, yet tiny, tool please check out [markdown2code](https://fibo.github.io/markdown2code).
 It is recommended if you have Node.js installed, in particular you can use triple backticks and highlight your code.
 
 ## Badge
@@ -33,7 +33,7 @@ It is recommended if you have Node.js installed, in particular you can use tripl
 Add the row below in your markdown file to get a badge
 
 ```
-[![KLP](https://img.shields.io/badge/kiss-literate-orange.svg)](http://g14n.info/kiss-literate-programming)
+[![KLP](https://fibo.github.io/svg/klp-badge.svg)](https://fibo.github.io/kiss-literate-programming)
 ```
 
 ## Usage
@@ -63,7 +63,7 @@ which expects one parameter, otherwise prints its **usage**
     		# KISS Literate programming
     		##
     		# Installation instructions, source and license available here:
-    		# http://g14n.info/kiss-literate-programming
+    		# https://fibo.github.io/kiss-literate-programming
     		##
     		USAGE: klp foo
     		MESSAGE
@@ -97,39 +97,39 @@ using the following template
 
     <!-- TODO: edit name and description -->
     # name
-    
-    > description 
-    
-    [![KLP](https://img.shields.io/badge/kiss-literate-orange.svg)](http://g14n.info/kiss-literate-programming)
-    
+
+    > description
+
+    [![KLP](https://fibo.github.io/svg/klp-badge.svg)](https://fibo.github.io/kiss-literate-programming)
+
     ## Installation
-    
+
     <!-- TODO: installation instructions here -->
-    
+
     ## Usage
-    
-    
+
+
     ## Annotated source
-    
+
     Documentation here
-    
+
         your code here
-    
+
     more documentation
     more documentation
 
     ```
     example code
     ```
-    
+
         more code
         more code more code
         more code more code more code
-    
+
     more documentation
-    
+
     ## License
-    
+
     <!-- TODO: license here -->
 
 Remember to change *name*, *description* and so on.
@@ -182,17 +182,17 @@ source ~/.bash/kiss-literate-programming/klp.sh
 
 Follows a list of examples embracing KLP method:
 
-* [5m](http://g14n.info/5m/)
-* [aws-lambda-res](http://g14n.info/aws-lambda-res/)
-* [mdconf-from](http://g14n.info/mdconf-from/)
-* [numerology](http://g14n.info/numerology/)
-* [prime-number](http://g14n.info/prime-number/)
-* [static-props](http://g14n.info/static-props/)
-* [volatility](http://g14n.info/volatility/)
-* [y-combinator](http://g14n.info/y-combinator/)
+* [5m](https://fibo.github.io/5m/)
+* [aws-lambda-res](https://fibo.github.io/aws-lambda-res/)
+* [mdconf-from](https://fibo.github.io/mdconf-from/)
+* [numerology](https://fibo.github.io/numerology/)
+* [prime-number](https://fibo.github.io/prime-number/)
+* [static-props](https://fibo.github.io/static-props/)
+* [volatility](https://fibo.github.io/volatility/)
+* [y-combinator](https://fibo.github.io/y-combinator/)
 * [fibo's home initializer script](https://github.com/fibo/home/blob/gh-pages/README.md#init-home)
 
 ## License
 
-[MIT](http://g14n.info/mit-license)
+[MIT](https://fibo.github.io/mit-license)
 
