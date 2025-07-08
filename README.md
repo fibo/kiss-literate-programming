@@ -182,15 +182,8 @@ source ~/.bash/kiss-literate-programming/klp.sh
 
 Follows a list of examples embracing KLP method:
 
-* [5m](https://fibo.github.io/5m/)
-* [aws-lambda-res](https://fibo.github.io/aws-lambda-res/)
-* [mdconf-from](https://fibo.github.io/mdconf-from/)
-* [numerology](https://fibo.github.io/numerology/)
-* [prime-number](https://fibo.github.io/prime-number/)
-* [static-props](https://fibo.github.io/static-props/)
-* [volatility](https://fibo.github.io/volatility/)
-* [y-combinator](https://fibo.github.io/y-combinator/)
-* [fibo's home initializer script](https://github.com/fibo/home/blob/gh-pages/README.md#init-home)
+* [gh-clone](https://github.com/fibo/gh-clone/blob/main/README.md)
+* [fibo's home initializer script](https://github.com/fibo/home/blob/gh-pages/README.md)
 
 ## License
 
