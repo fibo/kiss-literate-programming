@@ -183,6 +183,7 @@ source ~/.bash/kiss-literate-programming/klp.sh
 Follows a list of examples embracing KLP method:
 
 * [gh-clone](https://github.com/fibo/gh-clone/blob/main/README.md)
+* [cleanup_git_branches](https://github.com/fibo/cleanup_git_branches/blob/main/README.md)
 * [fibo's home initializer script](https://github.com/fibo/home/blob/gh-pages/README.md)
 
 ## License
